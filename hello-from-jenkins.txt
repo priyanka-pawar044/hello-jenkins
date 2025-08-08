@@ -1,0 +1,9 @@
+// hello-from-jenkins.groovy
+// Sets the Jenkins system message (MOTD)
+
+import jenkins.model.Jenkins
+
+def message = "hello from unnati"
+Jenkins.instance.setSystemMessage(message)
+
+println("✔ System message updated to: '${message}'")
